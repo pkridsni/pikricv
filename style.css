@@ -1,0 +1,304 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #3b8d99, #6b6b6b);
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+    position: relative;
+}
+
+.cv-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    animation: slide-in 1s ease-out both;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #1e90ff;
+    animation: fade-in 1s ease-in-out;
+}
+
+.header .profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.header .profile-photo {
+    flex-shrink: 0;
+    margin-right: 20px;
+    position: relative;
+}
+
+.header .profile-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #1e90ff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header .profile-photo img:hover {
+    transform: scale(1.05);
+}
+
+.header .profile-info h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.header .profile-info .role {
+    font-size: 1.2em;
+    color: #555;
+    font-style: italic;
+}
+
+.header .cta {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #1e90ff;
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.header .cta:hover {
+    background: #006bb3;
+}
+
+/* About Me Section */
+.about {
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    font-size: 1.8em;
+    color: #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-in-out;
+}
+
+.about p {
+    color: #333;
+    animation: fade-in 2s ease-in-out;
+}
+
+.about .highlight {
+    color: #1e90ff;
+    font-weight: bold;
+}
+
+/* Experience Section */
+.experience {
+    margin-bottom: 40px;
+}
+
+.experience h2 {
+    font-size: 1.8em;
+    color: #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.experience .job {
+    margin-bottom: 30px;
+}
+
+.experience .job h3 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+.experience .job p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.experience .job ul {
+    list-style: none;
+    margin-top: 10px;
+    animation: slide-up 0.5s ease-out;
+}
+
+.experience .job ul li {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Education Section */
+.education {
+    margin-bottom: 40px;
+}
+
+.education h2 {
+    font-size: 1.8em;
+    color: #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-in-out;
+}
+
+.education .degree h3 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+.education .degree p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Skills Section */
+.skills {
+    margin-bottom: 40px;
+}
+
+.skills h2 {
+    font-size: 1.8em;
+    color: #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-in-out;
+}
+
+.skills .skill-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.skills .skill-list li {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    animation: slide-up 0.5s ease-out;
+}
+
+/* Projects Section */
+.projects {
+    margin-bottom: 40px;
+}
+
+.projects h2 {
+    font-size: 1.8em;
+    color: #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-in-out;
+}
+
+.projects .project {
+    margin-bottom: 20px;
+}
+
+.projects .project h3 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+.projects .project p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.projects .project a {
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.projects .project a:hover {
+    color: #006bb3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+    animation: fade-in 2s ease-in-out;
+}
+
+/* Background Animation */
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+    animation: move-background 30s linear infinite;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes move-background {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
